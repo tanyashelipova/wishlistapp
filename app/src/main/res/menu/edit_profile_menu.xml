@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.wishlistapp.wishlist.myProfileAndWishList.EditProfileActivity">
+    <item
+        android:id="@+id/edit_profile_menu_change_password"
+        android:orderInCategory="100"
+        android:title="@string/edit_profile_change_password"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/edit_profile_menu_confirm_email"
+        android:orderInCategory="100"
+        android:title="@string/edit_profile_confirm_email"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/edit_profile_menu_delete"
+        android:orderInCategory="100"
+        android:title="@string/edit_profile_delete"
+        app:showAsAction="never" />
+
+</menu>

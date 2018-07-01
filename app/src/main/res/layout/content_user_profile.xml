@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profileMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ru.wishlistapp.wishlist.anotherStuff.UserProfile"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    tools:showIn="@layout/recyclerview_user_profile">
+
+    <!--Шапка профиля-->
+
+    <RelativeLayout
+        android:id="@+id/profileInfoMainRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:layout_centerVertical="true"
+            app:civ_border_color="@android:color/black"
+            app:civ_border_width="0.5dp"/>
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/profilePhoto"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:text="@string/username"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/birthdayTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/profilePhoto"
+            android:layout_below="@id/nameTV"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/birthday"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/myGiftsLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_below="@id/profileInfoMainRL"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/myGiftsWanted"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/myGiftsIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/gift_icon" />
+
+            <TextView
+                android:id="@+id/myGiftsTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="@string/my_gifts" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myGiftReceivedLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/myGiftReceivedIV"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/checked_icon" />
+
+            <TextView
+                android:id="@+id/myGiftReceivedTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="@string/my_gifts_recieved" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

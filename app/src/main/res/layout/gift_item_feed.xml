@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/giftLLfeed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/giftCVfeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/giftUsernameFeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/feed_username"
+                android:textColor="@android:color/black"
+                android:textStyle="bold|italic" />
+
+           <!-- Информация о подарке-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/giftImageFeed"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="3dp"
+                android:src="@drawable/nowishimage"
+                app:civ_border_color="@android:color/black"
+                android:layout_alignLeft="@id/giftUsernameFeed"
+                app:civ_border_width="0.5dp"
+                android:layout_below="@id/giftUsernameFeed"/>
+
+            <TextView
+                android:id="@+id/giftTitleFeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/gift_title"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/giftImageFeed"
+                android:layout_toRightOf="@+id/giftImageFeed" />
+
+            <TextView
+                android:id="@+id/giftDescriptionFeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/giftTitleFeed"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/giftImageFeed"
+                android:text="@string/gift_description"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/giftDateFeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gift_date"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+    <!--android:layout_alignParentBottom="true"-->

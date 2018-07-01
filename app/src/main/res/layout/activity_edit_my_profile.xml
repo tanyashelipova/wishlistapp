@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/buttonsLLEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonEditProfileCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/cardview_shadow_start_color"
+            android:text="@string/add_gift_cancel_button"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonEditProfileSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimary"
+            android:enabled="true"
+            android:text="@string/edit_profile_save_button"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonsLLEditProfile">
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImageProfileEdit"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="0.5dp"
+                app:srcCompat="@drawable/profile_pic"
+                android:clickable="true"/>
+
+            <Button
+                android:id="@+id/buttonEditProfileChooseImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileImageProfileEdit"
+                android:clickable="true"
+                android:background="@color/colorPrimary"
+                android:text="@string/edit_profile_image_button"
+                android:textColor="@android:color/white" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nameEditProfileL"
+                android:layout_below="@+id/buttonEditProfileChooseImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/nameEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="@string/edit_profile_name"
+                android:inputType="textCapSentences"
+                android:maxLength="20"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameEditProfileL"
+                android:layout_below="@+id/nameEditProfileL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/usernameEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameEditProfileL"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="@string/edit_profile_username"
+                android:digits="abcdefghijklmnopqrstuvwxyz0123456789_"
+                android:inputType="text"
+                android:maxLength="15"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailEditProfileL"
+                android:layout_below="@id/usernameEditProfileL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/emailEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="@string/edit_profile_email"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/bdayEditProfileL"
+                android:layout_below="@id/emailEditProfileL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/bdayEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:hint="@string/edit_profile_bday"
+                android:textColor="@android:color/black"
+                android:clickable="true"
+                android:inputType="date"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:textSize="14sp"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

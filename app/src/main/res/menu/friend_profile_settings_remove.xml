@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.wishlistapp.wishlist.anotherStuff.UserProfile">
+    <item
+        android:id="@+id/friend_profile_remove"
+        android:orderInCategory="100"
+        android:title="@string/friend_profile_settings_remove"
+        app:showAsAction="never" />
+
+</menu>

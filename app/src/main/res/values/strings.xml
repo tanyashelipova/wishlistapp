@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Wish List</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">Имя</string>
+    <string name="profile_name">Имя пользователя</string>
+    <string name="birthday">День рождения</string>
+    <string name="my_list">МОЙ СПИСОК</string>
+    <string name="my_friends">Друзья</string>
+    <string name="feed">Лента</string>
+    <string name="gift_title">Название желания</string>
+    <string name="gift_description">Описание желания</string>
+    <string name="gift_date">Дата добавления</string>
+    <string name="my_gifts">Желаемые</string>
+    <string name="my_gifts_recieved">Исполненные</string>
+
+    <string name="add_gift_title">Название (до 25 символов)</string>
+    <string name="add_gift_description">Описание</string>
+    <string name="add_gift_lable">Добавить желание</string>
+    <string name="add_gift_add_button">Добавить</string>
+    <string name="add_gift_cancel_button">Отмена</string>
+    <string name="add_gift_image_button">Выберите изображение</string>
+    <string name="add_gift_switch">Желание исполнено</string>
+    <string name="add_gift_link">Ссылка в интернет-магазине</string>
+    <string name="add_gift_link_error">Неверный формат ссылки</string>
+
+    <string name="feed_user">Пользователь</string>
+    <string name="feed_username">имя пользователя</string>
+    <string name="feed_action">действие</string>
+    <string name="feed_gift">подарок:</string>
+    <string name="feed_gift_title">Название желания</string>
+    <string name="feed_gift_description">Описание желания</string>
+    <string name="list_friend_username">Имя пользователя</string>
+
+    <string name="feed_empty">Пока тут пусто :( Используйте поиск пользователей, чтобы
+    находить друзей и видеть здесь обновления их списков желаний. </string>
+    <string name="feed_empty_friendswishes">Видимо, у ваших друзей списки желаний пусты. </string>
+
+    <string name="list_friend_name">Имя друга</string>
+    <string name="list_friend_bday_tv">ДР: </string>
+    <string name="list_friend_bday_value">день рождения</string>
+    <string name="list_friend_empty">Пока тут пусто :( Здесь будет отображаться список друзей.
+    Чтобы добавить друга, воспользуйтесь поиском пользователей. </string>
+
+    <string name="gift_post_toolbar_title">Подарок</string>
+    <string name="gift_post_settings_delete">Удалить</string>
+    <string name="gift_post_settings_edit">Редактировать</string>
+    <string name="gift_post_comments">Посмотреть комментарии</string>
+    <string name="gift_post_add_comment">Добавить комментарий...</string>
+    <string name="gift_post_add_comment_btn">Отправить</string>
+
+    <string name="gift_post_delete_comment">Удалить комментарий?</string>
+
+    <string name="edit_gift_lable">Редактировать</string>
+    <string name="edit_gift_save_button">Сохранить</string>
+
+    <string name="menu_user_profile_clean_wishlist">Очистить мой список</string>
+    <string name="menu_user_profile_edit_my_profile">Редактировать профиль</string>
+    <string name="menu_user_profile_logout">Выйти</string>
+    <string name="menu_user_profile_search_user">Поиск пользователей...</string>
+    <string name="menu_user_profile_search_user_fail">Данный пользователь не найден</string>
+    <string name="menu_user_profile_search_user_equals">Вы ввели свое имя пользователя</string>
+
+    <string name="friend_profile_settings_remove">Удалить из друзей</string>
+    <string name="friend_profile_settings_add">Добавить в друзья</string>
+
+    <string name="edit_profile_name">Имя</string>
+    <string name="edit_profile_username">Имя пользователя</string>
+    <string name="edit_profile_bday">День рождения</string>
+    <string name="edit_profile_save_button">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="edit_profile_image_button"> Сменить фото</string>
+
+    <string name="change_photo"> Выбрать новое</string>
+    <string name="delete"> Удалить</string>
+    <string name="delete_photo_apr"> Уверены, что хотите удалить фото?</string>
+
+    <string name="edit_profile_email">E-mail</string>
+    <string name="edit_profile_photo_removed">Фото удалено</string>
+    <string name="edit_profile_delete">Удалить профиль</string>
+    <string name="edit_profile_change_password">Сменить пароль</string>
+    <string name="edit_profile_change_curr_password">Текущий пароль</string>
+    <string name="edit_profile_confirm_email">Подтвердить почту</string>
+    <string name="delete_profile_confirm">Уверены, что хотите удалить профиль?</string>
+
+    <string name="title_activity_register">Регистрация</string>
+
+    <!-- Strings related to register -->
+    <string name="prompt_username">Имя пользователя</string>
+    <string name="prompt_name">Имя</string>
+    <string name="prompt_password">Пароль (не менее 8 символов)</string>
+    <string name="prompt_password_login">Пароль</string>
+    <string name="prompt_retype_password">Повторите пароль</string>
+    <string name="action_sign_up">Зарегистрироваться</string>
+    <string name="action_sign_in">Войти</string>
+    <string name="error_invalid_password">Пароль слишком короткий</string>
+    <string name="error_password_mismatch">Пароли не совпадают</string>
+    <string name="error_email_incorrect">Некорректный адрес</string>
+    <string name="error_field_required">Поле не может быть пустым</string>
+
+    <string name="ok">Хорошо</string>
+    <string name="confirm_email_sent">Пожалуйста, проверьте указанную почту и подтвердите свой E-mail, перейдя
+    по ссылке в письме. Без этого Вы не сможете при необходимости восстановить пароль.</string>
+    <string name="confirm_email_not_sent">Не удалось отправить письмо для подтверждения E-mail.
+    Пожалуйста, проверьте правильность своего адреса и при неоходимости скорректируйте данные. </string>
+
+
+    <string name="start_login">Войти</string>
+    <string name="start_login_forgot_password">Забыли пароль?</string>
+    <string name="start_login_activity">Вход</string>
+    <string name="start_register">Зарегистрироваться</string>
+
+    <string name="error_no_connection">Невозможно загрузить данные</string>
+    <string name="error">Невозможно загрузить данные</string>
+
+    <string name="notification_success">Изображение загружено.</string>
+    <string name="notification_progress">Загрузка изображения...</string>
+    <string name="notification_fail">Не удалось загрузить изображение.</string>
+
+    <string name="notification_add_wish">Пожалуйста, подождите...</string>
+
+    <string name="add_friend_error">Не удалось добавить пользователя в ваш список друзей</string>
+    <string name="remove_friend_error">Не удалось удалить пользователя из вашего списка друзей</string>
+
+    <string name="data_changed">Данные обновлены</string>
+
+    <string name="feed_no_connection">Лента недоступна.
+        Проверьте интернет-соединение. </string>
+    <string name="friends_no_connection">Друзья недоступны.
+        Проверьте интернет-соединение.</string>
+
+    <string name="username_or_email">Имя пользователя или E-mail</string>
+    <string name="reset_password_button">Далее</string>
+    <string name="restore">Восстановление пароля</string>
+    <string name="new_password">Новый пароль (не менее 8 символов)</string>
+    <string name="new_password_submit">Сменить пароль</string>
+    <string name="reset_password_mail_sent">Перейдите по ссылке в письме, а
+    затем установите новый пароль. </string>
+
+    <string name="incorrect_password">Неверный пароль</string>
+
+    <string name="comments">Комментарии</string>
+
+    <string name="select_photo_from_gallery">Загрузить из галереи</string>
+    <string name="select_photo_from_camera">Загрузить с камеры</string>
+    <string name="camera_save_photo_failed">Не удалось сохранить фото</string>
+
+    <string name="wish_not_reserved">Желание не зарезервировано</string>
+    <string name="wish_what">Что это значит?</string>
+    <string name="wish_reserved">Желание зарезервированно</string>
+    <string name="wish_reserve">Зарезервировать</string>
+    <string name="to_reserve_wish">Зарезервировать желание? Это значит, что вы планируете
+    подарить в скором времени этот подарок. </string>
+
+    <string name="reserve_wish_title">Резервирование желания</string>
+    <string name="reserve_wish_message">Зарезервируйте желание друга, если решите подарить ему
+    этот подарок. Это нужно, чтобы другие пользователи видели, что этот подарок подарит кто-то другой. </string>
+
+    <string name="already_reserved">Данное желание зарезервировано другим пользователем. </string>
+    <string name="cancel_reserved">Отменить резерв?</string>
+
+    <string name="confirm">Да</string>
+
+
+</resources>

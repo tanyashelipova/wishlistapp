@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.wishlistapp.wishlist.anotherStuff.UserProfile">
+    <item
+        android:id="@+id/settings_edit_my_profile"
+        android:orderInCategory="100"
+        android:title="@string/menu_user_profile_edit_my_profile"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="@string/menu_user_profile_logout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/searchUser"
+        android:orderInCategory="100"
+        android:icon="@drawable/search_icon"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="@string/menu_user_profile_search_user"
+         />
+</menu>

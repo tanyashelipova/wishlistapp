@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.wishlistapp.wishlist.giftPost.CommentsActivity">
+
+    <ScrollView
+        android:id="@+id/commentsSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addCommentLL">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/commentsRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/addCommentLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/textComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.9"
+            android:ems="3"
+            android:hint="@string/gift_post_add_comment"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:maxLength="140"/>
+
+        <ImageButton
+            android:id="@+id/btnComment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.1"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/gift_post_add_comment_btn"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+    </LinearLayout>
+
+
+</RelativeLayout>

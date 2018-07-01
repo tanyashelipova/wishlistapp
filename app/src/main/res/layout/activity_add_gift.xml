@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/buttonsLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonAddGiftCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/cardview_shadow_start_color"
+            android:text="@string/add_gift_cancel_button"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonAddGiftAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimary"
+            android:enabled="true"
+            android:text="@string/add_gift_add_button"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonsLL">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/giftTitleAddGiftTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp">
+
+                <EditText
+                    android:id="@+id/giftTitleAddGift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:ems="10"
+                    android:hint="@string/add_gift_title"
+                    android:inputType="textCapSentences"
+                    android:maxLength="25"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/giftDescriptionAddGiftTextInput"
+                android:layout_below="@+id/giftTitleAddGiftTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/giftDescriptionAddGift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ems="10"
+                android:hint="@string/add_gift_description"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="100"
+                android:maxLines="3"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/linkAddGiftTextInput"
+                android:layout_below="@+id/giftDescriptionAddGiftTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/linkAddGift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ems="10"
+                android:hint="@string/add_gift_link"
+                android:inputType="textUri"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/addGiftImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/linkAddGiftTextInput"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                android:id="@+id/buttonAddGiftChooseImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addGiftImage"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/add_gift_image_button"
+                android:textColor="@android:color/white" />
+
+            <Switch
+                android:id="@+id/switchAddGiftStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonAddGiftChooseImage"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/add_gift_switch"
+                android:textSize="14sp"
+                tools:checked="false" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

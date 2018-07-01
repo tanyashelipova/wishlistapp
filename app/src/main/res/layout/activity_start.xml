@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/startRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.wishlistapp.wishlist.start.StartActivity">
+
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_below="@id/logoImageView"
+        android:id="@+id/startLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_login"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/startRegister"
+        android:layout_below="@+id/startLogin"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:text="@string/start_register"
+        android:visibility="gone"
+        android:textColor="@android:color/black"
+        android:clickable="true"
+        android:textSize="30sp"
+        android:focusable="true"/>
+
+</RelativeLayout>

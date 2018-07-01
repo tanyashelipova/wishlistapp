@@ -1,0 +1,4 @@
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:hint="@string/menu_user_profile_search_user"
+    android:label="@string/app_name"
+    android:searchSuggestIntentAction="android.intent.action.VIEW"/>

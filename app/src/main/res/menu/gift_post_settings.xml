@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.wishlistapp.wishlist.anotherStuff.UserProfile">
+    <item
+        android:id="@+id/gift_post_settings_edit"
+        android:orderInCategory="100"
+        android:title="@string/gift_post_settings_edit"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/gift_post_settings_delete"
+        android:orderInCategory="200"
+        android:title="@string/gift_post_settings_delete"
+        app:showAsAction="never" />
+</menu>

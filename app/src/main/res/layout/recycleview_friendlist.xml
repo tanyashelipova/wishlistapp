@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/friendListEmptyMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/list_friend_empty"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutFriendList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/friendListRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+<!--    <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
+        android:id="@+id/searchUserHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchUserSV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:queryHint="@string/prompt_password_login"
+            android:inputType="text"/>
+
+
+    </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>-->
+
+</FrameLayout>
+
+
